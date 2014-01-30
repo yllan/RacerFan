@@ -7,13 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "PS3SixAxis.h"
 
-@interface YLAppDelegate : NSObject <NSApplicationDelegate>
+@interface YLAppDelegate : NSObject <NSApplicationDelegate, PS3SixAxisDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSImageView *leftFan;
 @property (weak) IBOutlet NSImageView *rightFan;
 @property (weak) IBOutlet NSImageView *handleBar;
 @property (weak) IBOutlet NSLevelIndicator *fuelLevel;
+
+@property (strong, nonatomic) PS3SixAxis *dualShock;
+
+@property CGFloat velocity;
+@property CGFloat direction;
 
 @end

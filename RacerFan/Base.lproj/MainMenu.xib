@@ -681,27 +681,27 @@
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="dogfan-face" id="mO7-go-hnF"/>
                     </imageView>
                     <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BqY-Pz-X7f">
-                        <rect key="frame" x="822" y="20" width="438" height="438"/>
+                        <rect key="frame" x="855" y="20" width="438" height="438"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="dogfan-back" id="AxQ-PF-ocF"/>
                     </imageView>
                     <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qtP-6K-GXd">
-                        <rect key="frame" x="906" y="115" width="230" height="247"/>
+                        <rect key="frame" x="939" y="115" width="230" height="247"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="dogfan-fan" id="6FU-eN-QtP"/>
                     </imageView>
                     <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIr-vd-oEl">
-                        <rect key="frame" x="822" y="20" width="438" height="438"/>
+                        <rect key="frame" x="855" y="20" width="438" height="438"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="dogfan-feet" id="Jfg-rB-RTW"/>
                     </imageView>
                     <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ceg-WA-vTD">
-                        <rect key="frame" x="822" y="20" width="438" height="438"/>
+                        <rect key="frame" x="855" y="20" width="438" height="438"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="dogfan-front" id="Zae-Z0-DQw"/>
                     </imageView>
                     <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ge0-9l-Eo0">
-                        <rect key="frame" x="822" y="20" width="438" height="438"/>
+                        <rect key="frame" x="855" y="20" width="438" height="438"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="dogfan-face" id="kxC-kC-q8F"/>
                     </imageView>
@@ -715,6 +715,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <levelIndicatorCell key="cell" alignment="left" maxValue="255" warningValue="120" criticalValue="220" numberOfMajorTickMarks="1" levelIndicatorStyle="continuousCapacity" id="dVs-FD-qwX"/>
                     </levelIndicator>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iIc-hl-Oi3" customClass="YLRoadView">
+                        <rect key="frame" x="379" y="335" width="512" height="384"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9G-UN-Pi8">
+                                <rect key="frame" x="238" y="45" width="36" height="67"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="car" id="qbX-Lf-maa"/>
+                            </imageView>
+                        </subviews>
+                    </customView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="hJa-pe-kec" secondAttribute="bottom" constant="20" id="4Ig-MK-RbZ"/>
@@ -732,16 +743,19 @@
         </window>
         <customObject id="494" customClass="YLAppDelegate">
             <connections>
+                <outlet property="carView" destination="Z9G-UN-Pi8" id="cbx-At-g49"/>
                 <outlet property="fuelLevel" destination="f9J-rB-IYI" id="a9s-UG-rvE"/>
                 <outlet property="handleBar" destination="wGW-ug-kLq" id="siP-EJ-CjQ"/>
                 <outlet property="leftFan" destination="UcQ-p3-VHO" id="NgJ-Nt-xkg"/>
                 <outlet property="rightFan" destination="qtP-6K-GXd" id="r27-RH-wAX"/>
+                <outlet property="roadView" destination="iIc-hl-Oi3" id="dai-I5-slN"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
     </objects>
     <resources>
+        <image name="car" width="36" height="67"/>
         <image name="dogfan-back" width="438" height="438"/>
         <image name="dogfan-face" width="438" height="438"/>
         <image name="dogfan-fan" width="230" height="247"/>

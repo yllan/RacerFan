@@ -22,6 +22,7 @@
 		85B7BF54189AC011003EEF64 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B7BF53189AC011003EEF64 /* IOBluetooth.framework */; };
 		85B7BF56189AC01B003EEF64 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B7BF55189AC01B003EEF64 /* IOKit.framework */; };
 		85B7BF58189AC050003EEF64 /* libPS3SixAxis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B7BF57189AC050003EEF64 /* libPS3SixAxis.a */; };
+		85B7BF68189ACDE0003EEF64 /* YLRoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B7BF67189ACDE0003EEF64 /* YLRoadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		85B7BF55189AC01B003EEF64 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		85B7BF57189AC050003EEF64 /* libPS3SixAxis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPS3SixAxis.a; sourceTree = "<group>"; };
 		85B7BF59189AC087003EEF64 /* PS3SixAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PS3SixAxis.h; sourceTree = "<group>"; };
+		85B7BF66189ACDE0003EEF64 /* YLRoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRoadView.h; sourceTree = "<group>"; };
+		85B7BF67189ACDE0003EEF64 /* YLRoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRoadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				85B7BF59189AC087003EEF64 /* PS3SixAxis.h */,
 				85B7BF2F189ABFD7003EEF64 /* YLAppDelegate.h */,
 				85B7BF30189ABFD7003EEF64 /* YLAppDelegate.m */,
+				85B7BF66189ACDE0003EEF64 /* YLRoadView.h */,
+				85B7BF67189ACDE0003EEF64 /* YLRoadView.m */,
 				85B7BF32189ABFD7003EEF64 /* MainMenu.xib */,
 				85B7BF35189ABFD7003EEF64 /* Images.xcassets */,
 				85B7BF24189ABFD6003EEF64 /* Supporting Files */,
@@ -271,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85B7BF68189ACDE0003EEF64 /* YLRoadView.m in Sources */,
 				85B7BF2A189ABFD6003EEF64 /* main.m in Sources */,
 				85B7BF31189ABFD7003EEF64 /* YLAppDelegate.m in Sources */,
 			);

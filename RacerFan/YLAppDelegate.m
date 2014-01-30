@@ -31,7 +31,17 @@
     CGFloat leftVelocity = _velocity * (1 - _direction * 0.6) / 1.6;
     CGFloat rightVelocity = _velocity * (1 + _direction * 0.6) / 1.6;
 
-
+    self.roadView.distance += _velocity / 2.5;
+    [self.roadView setNeedsDisplay: YES];
+    
+    if (_velocity > 0.5) {
+        NSRect carFrame = self.carView.frame;
+        carFrame.origin.x += _direction * 2;
+        if (carFrame.origin.x < 0) carFrame.origin.x = 0;
+        if (carFrame.origin.x > self.roadView.frame.size.width - carFrame.size.width) carFrame.origin.x = self.roadView.frame.size.width - carFrame.size.width;
+        self.carView.frame = carFrame;
+    }
+    
     self.rightFan.frameCenterRotation += rightVelocity;
     self.leftFan.frameCenterRotation += leftVelocity;
     self.handleBar.frameCenterRotation = _direction * -80;

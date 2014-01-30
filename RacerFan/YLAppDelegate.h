@@ -11,5 +11,9 @@
 @interface YLAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSImageView *leftFan;
+@property (weak) IBOutlet NSImageView *rightFan;
+@property (weak) IBOutlet NSImageView *handleBar;
+@property (weak) IBOutlet NSLevelIndicator *fuelLevel;
 
 @end

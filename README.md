@@ -1,7 +1,7 @@
 Racer Fan
 ==========
 
-根據車速和方向來調整左右風扇出力，營造出敞篷跑車迎面而來逆風的速度感！目前只是 proof-of-concept，沒有接真正的硬體，在畫面上模擬風扇而已。
+根據車速和方向來調整左右風扇出力，營造出敞篷跑車迎面而來逆風的速度感！目前只是 proof-of-concept，沒有接真正的硬體，在畫面上模擬風扇而已。[展示影片](http://www.youtube.com/watch?v=0qk74q47DxA)。
 
 PS3 Dualshock Controller
 ========================
